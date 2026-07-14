@@ -69,6 +69,7 @@ server.port=8097
 | :--- | :--- | :--- |
 | **GET** | `/api/employees` | Retrieve a list of all employees |
 | **GET** | `/api/employees/{id}` | Retrieve a specific employee by ID |
+| **GET** | `/api/employees/department/{departmentName}` | Retrieve all employees belonging to a specific department |
 | **POST** | `/api/employees` | Create a new employee record |
 | **PUT** | `/api/employees/{id}` | Update an existing employee record |
 | **DELETE** | `/api/employees/{id}` | Delete an employee record |

@@ -49,6 +49,10 @@ public class EmployeeService {
         return true;
     }
 
+    public List<Employee> getEmployeesByDepartment(String departmentName) {
+        return employeeRepository.findByDepartment(departmentName);
+    }
+
     private void validateEmployee(Employee employee) {
 
         if (employee.getName() == null || employee.getName().trim().isEmpty()) {

@@ -75,6 +75,11 @@ public class EmployeeController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/department/{departmentName}")
+    public List<Employee> getEmployeesByDepartment(@PathVariable String departmentName) {
+        return employeeService.getEmployeesByDepartment(departmentName);
+    }
+
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handleValidationError(
             IllegalArgumentException exception) {
