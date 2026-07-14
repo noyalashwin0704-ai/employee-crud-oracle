@@ -1,0 +1,68 @@
+{
+  "info": {
+    "_postman_id": "8965af73-a865-49c6-905f-cdb95b289c8f",
+    "name": "sen-connection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56581906",
+    "_collection_link": "https://go.postman.co/collection/56581906-8965af73-a865-49c6-905f-cdb95b289c8f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "adding data",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Ashwin\",\r\n  \"email\": \"ashwin2026@gmail.com\",\r\n  \"department\": \"AI & DS\",\r\n  \"salary\": 25000,\r\n  \"joinDate\": \"2026-07-14\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8097/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8097",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetch single data",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Ashwin\",\r\n  \"email\": \"ashwin2026@gmail.com\",\r\n  \"department\": \"AI & DS\",\r\n  \"salary\": 25000,\r\n  \"joinDate\": \"2026-07-14\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8097/api/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8097",
+          "path": [
+            "api",
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
